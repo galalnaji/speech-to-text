@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع لتحويل الكلام إلى نص</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>موقع لتحويل الكلام إلى نص</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عن الموقع</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>مرحباً بك في موقع تحويل الكلام إلى نص</h2>
+            <p>استخدم الموقع لتحويل كلامك إلى نص مكتوب بسهولة ودقة.</p>
+            <button onclick="startRecording()">ابدأ التسجيل</button>
+            <button onclick="stopRecording()">إيقاف التسجيل</button>
+        </section>
+
+        <section id="recitation">
+            <h2>النص الناتج</h2>
+            <textarea id="userInput" placeholder="سيظهر النص هنا"></textarea>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
